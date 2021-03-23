@@ -8,3 +8,9 @@ Fuck Paywalls will remove AdBlock popups, and paywalls so you can do what you *a
 - NY Times
 - USA Today
 - more to come...
+
+# installation
+- Install TamperMonkey
+- Open the Dashboard and click "Utilities"
+- Paste "https://raw.githubusercontent.com/spacepilotAV/fuckpaywalls/master/fuckpaywalls.js" into the Install from URL field
+- Click Install
