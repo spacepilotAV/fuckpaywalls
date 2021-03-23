@@ -39,6 +39,17 @@
         }, 10);
     }
 
+    function usatodaypatch() {
+        var count = 0;
+        var interval = setInterval(function () {
+            /*
+             will clean up
+             */
+            document.querySelectorAll("[class*='sp_']").forEach(e => e.remove());
+            document.body.parentElement.style = ""; // jank hack
+        }, 10);
+    }
+
     function patchsite() {
         if (document.domain.indexOf(".latimes.com") != -1) {
             latimespatch();
@@ -46,6 +57,10 @@
         if (document.domain.indexOf("nytimes.com") != -1) {
             nytimespatch();
         }
+        if (document.domain.indexOf("usatoday.com") != -1) {
+           usatodaypatch();
+        }
+
 
         else {
             // either not a news site or not implemented
