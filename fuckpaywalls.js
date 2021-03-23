@@ -15,6 +15,7 @@
             document.querySelectorAll('.fc-dialog-container').forEach(e => e.remove()); // popup stuff
             document.querySelectorAll('.fc-dialog-overlay').forEach(e => e.remove());   // more popup stuff
             document.querySelectorAll('metering-modal').forEach(e => e.remove());       // other subscribe notification
+            document.querySelectorAll('metering-bottompanel').forEach(e => e.remove()); // other other subscribe notification
             document.body.style = "";                                                   // enable scrolling
             if (count++ == 1000) {
                 // don't waste CPU after 10 seconds
