@@ -6,4 +6,5 @@ Fuck Paywalls will remove AdBlock popups, and paywalls so you can do what you *a
 ### Currently supported sites:
 - LA Times
 - NY Times
+- USA Today
 - more to come...
