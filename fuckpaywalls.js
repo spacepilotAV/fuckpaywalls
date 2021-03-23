@@ -31,9 +31,10 @@
              will clean up
              */
 
-            document.querySelectorAll("#gateway-content").forEach(e => e.remove()); /* remove bullshit popup background     */
-            document.querySelectorAll(".css-1bd8bfl").forEach(e => e.remove());     /* remove bullshit popup gradient       */
-            document.querySelectorAll("[id*='lire-ui']").forEach(e => e.remove());  /* remove bullshit popup clicky thingys */
+            document.querySelectorAll("#gateway-content").forEach(e => e.remove());                  /* remove bullshit popup background     */
+            document.querySelectorAll(".css-1bd8bfl").forEach(e => e.remove());                      /* remove bullshit popup gradient       */
+            document.querySelectorAll("[id*='lire-ui']").forEach(e => e.remove());                   /* remove bullshit popup clicky thingys */
+            document.querySelectorAll("[data-testid*='subscribe-button']").forEach(e => e.remove()); /* remove subscribe button              */
             document.querySelectorAll('.css-mcm29f').forEach(function(node) {
                 /*
                  enable scrolly things
