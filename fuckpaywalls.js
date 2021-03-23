@@ -12,10 +12,10 @@
     function latimespatch() {
         var count = 0;
         var interval = setInterval(function () {
-            document.querySelectorAll('.fc-dialog-container').forEach(e => e.remove());
-            document.querySelectorAll('.fc-dialog-overlay').forEach(e => e.remove());
-            document.querySelectorAll('metering-modal').forEach(e => e.remove());
-            document.body.style = "";
+            document.querySelectorAll('.fc-dialog-container').forEach(e => e.remove()); // popup stuff
+            document.querySelectorAll('.fc-dialog-overlay').forEach(e => e.remove());   // more popup stuff
+            document.querySelectorAll('metering-modal').forEach(e => e.remove());       // other subscribe notification
+            document.body.style = "";                                                   // enable scrolling
             if (count++ == 1000) {
                 // don't waste CPU after 10 seconds
                 clearInterval(interval);
@@ -30,10 +30,13 @@
              will clean up
              */
 
-            document.querySelectorAll("#gateway-content").forEach(e => e.remove());
-            document.querySelectorAll(".css-1bd8bfl").forEach(e => e.remove());
-            document.querySelectorAll("[id*='lire-ui']").forEach(e => e.remove());
+            document.querySelectorAll("#gateway-content").forEach(e => e.remove()); /* remove bullshit popup background     */
+            document.querySelectorAll(".css-1bd8bfl").forEach(e => e.remove());     /* remove bullshit popup gradient       */
+            document.querySelectorAll("[id*='lire-ui']").forEach(e => e.remove());  /* remove bullshit popup clicky thingys */
             document.querySelectorAll('.css-mcm29f').forEach(function(node) {
+                /*
+                 enable scrolly things
+                 */
                 node.className = ""
             });
         }, 10);
@@ -45,7 +48,7 @@
             /*
              will clean up
              */
-            document.querySelectorAll("[class*='sp_']").forEach(e => e.remove());
+            document.querySelectorAll("[class*='sp_']").forEach(e => e.remove()); /* more jank magic, removes their adblock shit */
             document.body.parentElement.style = ""; // jank hack
         }, 10);
     }
